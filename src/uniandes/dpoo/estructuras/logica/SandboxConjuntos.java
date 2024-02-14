@@ -67,7 +67,8 @@ public class SandboxConjuntos
      */
     public String getPrimera( )
     {
-    	if (arbolCadenas.isEmpty()) {
+    	if (arbolCadenas.isEmpty())
+    	{
             return null;
         }
         return arbolCadenas.first();
@@ -81,7 +82,8 @@ public class SandboxConjuntos
      */
     public String getUltima( )
     {
-    	if (arbolCadenas.isEmpty()) {
+    	if (arbolCadenas.isEmpty()) 
+    	{
             return null;
         }
         return arbolCadenas.last();
@@ -142,7 +144,8 @@ public class SandboxConjuntos
         Iterator<String> iterator = arbolCadenas.iterator();
         while (iterator.hasNext()) {
             String elemento = iterator.next();
-            if (elemento.equalsIgnoreCase(cadenaLowerCase)) {
+            if (elemento.equalsIgnoreCase(cadenaLowerCase)) 
+            {
                 iterator.remove();
             }
         }
@@ -169,7 +172,8 @@ public class SandboxConjuntos
     public void reiniciarConjuntoCadenas( List<Object> objetos )
     {
     	arbolCadenas.clear();
-        for (Object obj : objetos) {
+        for (Object obj : objetos) 
+        {
             arbolCadenas.add(obj.toString());
         }
 
@@ -210,7 +214,8 @@ public class SandboxConjuntos
     {
     	List<String> lista = new ArrayList<>();
 
-        for (String elemento : otroArreglo) {
+        for (String elemento : otroArreglo) 
+        {
             lista.add(elemento);
         }
 

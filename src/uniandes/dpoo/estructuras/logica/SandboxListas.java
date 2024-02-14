@@ -121,7 +121,8 @@ public class SandboxListas
     {
     	List<Integer> elementosAEliminar = new ArrayList<>();
 
-        for (Integer elemento : listaEnteros) {
+        for (Integer elemento : listaEnteros)
+        {
             if (elemento == valor) {
                 elementosAEliminar.add(elemento);
             }
@@ -162,7 +163,8 @@ public class SandboxListas
     {
     	if (posicion < 0) {
             posicion = 0;
-        } else if (posicion > listaEnteros.size()) {
+        } else if (posicion > listaEnteros.size()) 
+        {
             posicion = listaEnteros.size();
         }
 
@@ -192,7 +194,8 @@ public class SandboxListas
     {
     	listaEnteros.clear();
 
-        for (double valor : valores) {
+        for (double valor : valores)
+        {
             listaEnteros.add((int) valor);
         }
     }
